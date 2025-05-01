@@ -1,0 +1,162 @@
+/* خلفية السكشن */
+.section-hero {
+    background-image: url("../Assets/Images/s-hero.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    /* منع السكروول الجانبي */
+}
+body {
+    font-family:system-ui;
+}
+.best-section {
+    background-color: #f4f1ea;
+}
+
+/* منع السكروول أثناء تحميل الصفحة */
+
+
+.welcome {
+    color: #ff7318;
+}
+
+/* الأنيميشن لظهور الصورة الرئيسية */
+@keyframes slideInRotate {
+    0% {
+        transform: translateX(100%) scale(0.8) rotate(0deg);
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0) scale(1) rotate(360deg);
+    }
+}
+
+/* التأثير الخاص بالدوران المستمر */
+.hero-wrapper.animate-in {
+    animation: slideInRotate 1.5s ease-out forwards;
+}
+
+.hero-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* منع العناصر من الخروج */
+}
+
+/* الأنيميشن المستمر للصورة */
+@keyframes rotdeg {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hero-wrapper.rotate-loop {
+    animation: rotdeg 20s linear infinite;
+}
+
+/* إضافة تأثيرات للصور */
+.hero-pizza {
+    transition: transform 0.2s ease !important;
+    will-change: transform !important;
+}
+
+.btn-order-now {
+    background-color: #ff7318;
+    border-radius: 8px;
+    transition: 0.5s ease;
+    color: white;
+}
+
+.btn-order-now:hover {
+    transform: translateX(10px) rotate(5deg);
+    background-color: #ff4800;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.offer {
+    background-color: rgb(247, 255, 233);
+}
+
+.tit {
+    color: #ff4800;
+}
+
+@keyframes floatLeftRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.offer {
+    position: relative;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+/* استايل دائرة الخصم */
+.discount-badge {
+    animation: floatLeftRight 3s ease-in-out infinite;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: #ff4800;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+.bg-offer{
+    background-image: url('../Assets/Images/menu/bg_offer.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.img-offer{
+    background-color: #ff7318;
+    border-radius: 100%  100% 0 0;
+    height: 80%;
+}
+.img-off{
+z-index: 2;}
+
+
+.time{
+    background-color: #ff7318;
+}
+
+.btn-order{
+    background-color: #ff4800;
+    transition: 0.5s ease;
+}
+.btn-order:hover{
+    background-color: #ff7318;
+    transform: scale(1.03) rotate(10deg) translateX(30px);
+
+}
+.ofer-div{
+    background-color: #101113;
+    border-radius: 10px;
+}

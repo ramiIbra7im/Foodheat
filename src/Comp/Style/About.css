@@ -1,0 +1,82 @@
+.about-section {
+    background-color: #F4F1EA;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+.content-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    text-align: center;
+    /* background-color: white; */
+    
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* تأثير الأيقونات */
+.animate-in-icon {
+    font-size: 2rem;
+    color: #FF7318;
+    margin: 0 5px;
+}
+
+/* تأثير الدخول */
+.animate-in {
+    animation: fadeInUp 1s ease forwards;
+}
+
+/* keyframes */
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.shape-left{
+    background-image: linear-gradient(to left , rgb(43, 28, 1) , rgb(170, 6, 6));
+    border-radius: 50% 0 0 50% ;
+}
+.shape-r{
+    border-radius:  0 50% 50% 0;
+        background-image: linear-gradient(to right, rgb(43, 28, 1), rgb(170, 6, 6));
+}
+.shape-left img,.shape-r img{
+        animation: rotet 15s infinite ease;
+
+}
+
+
+@media (max-width: 768px) {
+.shape-left,.shape-r {
+    display: none !important;
+    }
+    .content-about{
+        background-color: #F4F1EA;
+        
+        
+        
+    }
+}
+@keyframes rotet {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

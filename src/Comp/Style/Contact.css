@@ -1,0 +1,78 @@
+.contact{
+    background-color: #F4F1EA;
+    padding-top:10rem;
+}
+.Content-contact {
+    border: 1px solid #FF0000;
+    border-radius: 10px;
+    background-color: white;
+    transition: background-color 1s ease, color 1s ease, transform 1s ease;
+    transform: translateY(0);
+    /* مهم جدًا */
+}
+
+.Content-contact:hover {
+    background-color: #040F1C;
+    color: white;
+    cursor: pointer;
+    transform: translateY(20px);
+    /* تتحرك لأسفل */
+}
+
+.icons-contact {
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: transform 1s ease, border 1s ease;
+    transform: translateY(0) rotate(0deg);
+    /* مهم */
+}
+
+.Content-contact:hover .icons-contact {
+    border: 2px solid white;
+    transform: translateY(-20px) rotate(-30deg);
+    /* تتحرك وتلف */
+}
+.form-control:focus{
+    box-shadow: none;
+    outline: none;
+    border: 2px solid #040F1C;
+}
+.btn-submit{
+    background-color: #FF0000;
+    color: white;
+    transition: 0.5s ease;
+}
+.btn-submit:hover{
+    background-color: #040F1C;
+    color: white;
+}
+.div-form{
+    border-radius: 50px;
+    position: relative;
+}
+.img-pizza{
+    width: 10%;
+    position: absolute;
+    left: 10%;
+            animation: pizza 5s ease infinite;
+}
+@media (max-width:787px) {
+.img-pizza {
+        width: 20%;
+        position: absolute;
+        left: 20%;
+        bottom:80%;
+            
+        animation: pizza 5s ease infinite;
+    }
+}
+
+@keyframes pizza {
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    
+}

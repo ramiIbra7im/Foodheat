@@ -1,0 +1,75 @@
+.img-icon{
+    width: 20%;
+}
+
+.co-serv{
+    transition: 0.4s;
+    border-radius: 15px;
+    background-color: white;
+    cursor: pointer;
+}
+.co-serv:hover{
+    background-color: #040F1C;
+    color: white;
+    transform: translateY(-15px);
+}
+
+@keyframes Roteticon {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+.co-serv:hover .img-icon{
+    animation: Roteticon 0.4s ease-in-out  ;
+}
+.co-serv {
+    position: relative;
+    overflow: hidden;
+}
+
+.icon-fast {
+    position: absolute;
+    bottom: -50px;
+    /* تبدأ خارج الكارد من تحت */
+    right: -50px;
+    /* تبدأ خارج الكارد يمين */
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.301);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+/* لما تعمل hover على الكارد */
+.co-serv:hover .icon-fast {
+    bottom: 150px;
+    /* تدخل جوه من تحت */
+    right: 50px;
+    /* تدخل جوه من اليمين */
+    opacity: 1;
+}
+
+
+.icon-onion {
+        font-size: 8rem;
+    position: absolute;
+    top: 50px;
+    /* تبدأ خارج الكارد من تحت */
+    right: 50px;
+    /* تبدأ خارج الكارد يمين */
+    font-size: 8rem;
+    color: rgba(185, 185, 185, 0.301);
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+
+.co-serv:hover .icon-onion {
+    top: -150px;
+    /* تدخل جوه من تحت */
+    right: 150px;
+    /* تدخل جوه من اليمين */
+    opacity: 0;
+}

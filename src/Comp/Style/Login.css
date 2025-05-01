@@ -1,0 +1,55 @@
+.login {
+    background-color: #F4F1EA;
+}
+
+.login-co {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.form-co {
+    background-color: #F4F1EA;
+    border-radius: 30px;
+}
+
+.img-profile {
+    width: 70%;
+}
+
+.forget {
+    color: #E62E2D;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-login {
+    background-color: #E62E2D;
+    border-radius: 50px;
+    transition: 0.5s ease;
+}
+.btn-login-google{
+    border-radius: 50px;
+    transition: 0.5s;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn-login:hover,.btn-login-google:hover {
+        background-color: #EA7726;
+        color: white;
+    }
+    
+        
+
+.checkbox {
+    width: 50px;
+    height: auto;
+}
+.btn-login-gogle{
+    background-color: white;
+    color: black;
+}
+.SignUp{
+    color: #E62E2D;
+    cursor: pointer;
+}

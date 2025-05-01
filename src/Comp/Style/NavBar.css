@@ -1,0 +1,72 @@
+.navbar{
+    background-color: white;
+    
+}
+
+.nav-link{
+    color: black;
+    font-weight: bold;
+    transition: 0.4s;
+}
+.nav-link:hover,.nav-link:focus{
+    color: #E62E2D;
+    letter-spacing: 1px;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.search-input-container {
+    width: 0;
+    overflow: hidden;
+    transition: width 0.4s ease;
+}
+
+.search-input-container.show {
+    width: 200px;
+    /* أو أي عرض تحبه */
+}
+.btn-search{
+    color: rgb(122, 122, 122);
+    border:rgb(122, 122, 122) 1px solid;
+    transition: 0.3s ease;
+}
+.btn-search:hover{
+    color: #E62E2D;
+    border: #E62E2D solid 1px;
+}
+
+.login-btn{
+    background-color: #E7452C;
+    border-radius: 50px;
+    transition: 1s;
+}
+
+.login-btn .nav{
+     text-decoration: none;
+    border: none;
+    color: white;
+}
+
+.login-btn:hover{
+cursor: pointer;
+/* background-image: linear-gradient(to left , rgb(65, 0, 0) ,#e73a1f); */
+letter-spacing: 10px;
+}
+@media (max-width:787px) {
+    .login-btn{
+        margin-bottom: 1rem;
+    }
+}
+
+.cart{
+    position: relative;
+}
+.cart::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top:0;
+    background-color: #E7452C;
+}
