@@ -53,7 +53,7 @@ function Footer() {
                         text: "+201234567890"
                     }
                 ].map((item, idx) => (
-                    <motion.div key={idx} className="col gap-2 d-flex text-white" variants={itemVariants}>
+                    <motion.div key={idx} className="col gap-2 my-4 d-flex text-white" variants={itemVariants}>
                         <div className="align-items-center d-flex">{item.icon}</div>
                         <div className="row">
                             <h6>{item.title}</h6>
@@ -66,12 +66,12 @@ function Footer() {
             <motion.div className="row text-white container m-auto" variants={containerVariants}>
                 
                 {/* Logo and icons */}
-                <motion.div className="col" variants={itemVariants}>
+                <motion.div className="col-lg col-sm-12 my-4" variants={itemVariants}>
                     <BiSolidFoodMenu className="display-2" />
                     <h6 className="my-3 lh-6">
                         Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur lacinia mollis
                     </h6>
-                    <div className="d-flex col fs-2 gap-2 mt-5">
+                    <div className="d-flex col fs-2 gap-2 mt-3">
                         {[FaFacebookSquare, BsTwitterX, LiaLinkedin, BsYoutube].map((Icon, idx) => (
                             <motion.div key={idx} variants={itemVariants}>
                                 <Icon className="icon-2 p-1" />
@@ -91,7 +91,7 @@ function Footer() {
                 </motion.div>
 
                 {/* Our Menu */}
-                <motion.div className="col text-center" variants={itemVariants}>
+                <motion.div className="col text-center mb-4" variants={itemVariants}>
                     <h4 className="line">Our Menu</h4>
                     {["Burger King", "Pizza king", "Fresh Food", "Vegetable", "Desserts"].map((item, idx) => (
                         <motion.h6 className="link " key={idx} variants={itemVariants}>
@@ -101,7 +101,7 @@ function Footer() {
                 </motion.div>
 
                 {/* Contact Us + Email */}
-                <motion.div className="col" variants={itemVariants}>
+                <motion.div className="col-lg col-sm-12 " variants={itemVariants}>
                     <h4>Contact Us</h4>
                     <h6 className="text-secondary">
                         Monday – Friday: <span className="items-time">8am – 4pm</span>
@@ -121,6 +121,7 @@ function Footer() {
                     </motion.div>
                 </motion.div>
             </motion.div>
+            <h6 className="m-auto text-center text-white mt-4">Copyright © 2025 FoodHeat | Designed by Ramy Ibrahim | Powered By RB</h6>
         </motion.div>
     );
 }

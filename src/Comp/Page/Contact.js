@@ -33,25 +33,25 @@ function Contact() {
             <div className="container-fluid contact pb-5">
                 <div className="row container-sm m-auto gap-3">
 
-                    <div className="col Content-contact text-center p-3">
+                    <div className="col Content-contact text-center mb-3 p-3">
                         <CiLocationOn className='display-3 icons-contact p-2 my-4' />
                         <h3>Our Address</h3>
                         <p className='text-secondary'>4517 Washington Ave. Manchester, Kentucky 39495</p>
                     </div>
 
-                    <div className="col-lg Content-contact text-center p-3">
+                    <div className="col-lg Content-contact text-center  mb-3 p-3">
                         <MdEmail className='display-3 icons-contact p-2 my-4' />
                         <h3>info@example.com</h3>
                         <p className='text-secondary'> Email us anytime for any kind ofquety.    </p>
                     </div>
 
-                    <div className="col-lg Content-contact text-center p-3">
+                    <div className="col-lg Content-contact text-center  mb-3 p-3">
                         <TiTime className='display-3 icons-contact p-2 my-4' />
                         <h3>Opening Hours</h3>
                         <p className='text-secondary'>Sunday-Fri: 9 AM – 6 PM<br />Saturday: 9 AM – 4 PM</p>
                     </div>
 
-                    <div className="col-lg Content-contact text-center p-3">
+                    <div className="col-lg Content-contact text-center  mb-3 p-3">
                         <BiPhone className='display-3 icons-contact p-2 my-4' />
                         <h3>Hot: +201234567890</h3>
                         <p className='text-secondary'>24/7 Live Chat and ticketing support</p>
